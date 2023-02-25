@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai tap 3</title>
+</head>
+<body>
+<form>
+    <input type="text" id="demo"/>
+    <button type="button" onclick="tang();">up</button>
+    <button type="button" onclick="giam();">dowm</button>
+</form>
+<script>
+    function tang() {  let a = parseInt(document.getElementById("demo").value);
+        document.getElementById("demo").value = a + 2
+    }
+    function giam() {
+        let a = parseInt(document.getElementById("demo").value);
+        document.getElementById("demo").value = a - 2
+    }
+</script>
+</body>
+</html>
