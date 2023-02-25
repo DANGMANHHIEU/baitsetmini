@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai tap 2</title>
+</head>
+<body>
+<form>
+    <input type="text" id="o1"/></br>
+    <input type="text" id="o2"/></br>
+    <p id="ketqua">kết quả</p></br>
+    <button type="button" onclick="nhan();">Nhân</button>
+    <button type="button" onclick="chia();">chia</button>
+    <button type="button" onclick="cong();">cộng</button>
+    <button type="button" onclick="tru();">trừ</button>
+</form>
+<script>
+    function nhan() { let a = parseInt(document.getElementById('o1').value);
+        let b = parseInt(document.getElementById('o2').value);
+        let c= a*b;
+        document.getElementById('ketqua').innerHTML = c;
+    }
+    function chia() { let a = parseInt(document.getElementById('o1').value);
+        let b = parseInt(document.getElementById('o2').value);
+        let c= a/b;
+        document.getElementById('ketqua').innerHTML = c;
+    }
+    function cong() { let a = parseInt(document.getElementById('o1').value);
+        let b = parseInt(document.getElementById('o2').value);
+        let c= a+b;
+        document.getElementById('ketqua').innerHTML = c;
+    }
+    function tru() { let a = parseInt(document.getElementById('o1').value);
+        let b = parseInt(document.getElementById('o2').value);
+        let c= a-b;
+        document.getElementById('ketqua').innerHTML = c;
+    }
+</script>
+
+
+</body>
+</html>
